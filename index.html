@@ -179,20 +179,7 @@ d3.json("/data/menu.json", function(error, data){
 
     });
 
-hideStuff();
-
 });
-
-function hideStuff() {
-    $("#plant").trigger("click")
-    $(".categoryLevel").each(function(e){
-        console.log( $(this)[0].id)
-        if($(this)[0].id != "emissions" && $(this)[0].id != "generation") {
-            $(this).hide();
-        }
-    });
-    $("#breadcrumbs").hide();
-}
 
 var selection;
 var units;
